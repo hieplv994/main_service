@@ -32,4 +32,7 @@ uvicorn src.main:app --reload
 docker ps
 docker exec -it main_service-db-1 psql -U postgres -d main_service
 ```
-
+6. Execute database in aws
+```
+psql -h <host> -p 5432 -U <user> -d <database>
+```
